@@ -1,0 +1,59 @@
+#validé{
+    position: relative;
+    background: #f7f9fa;
+    border: 3px solid #d62828;
+    border-radius: 15px;
+    width:50%;
+    height: 400px;
+    margin: 0 auto;
+
+}
+.util {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    border-radius: 10px;
+}
+.util p {
+    border: 2px solid #d62828;
+    border-radius: 15px;
+    background: #f2f2f2;
+    padding: 5px;
+    margin: 10px;
+    width: 400px;
+    height: 30px;
+}
+
+.merci {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#validé .btnv{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 120px;
+    height: 50px;
+    background: #d62828;
+    border: #d62828;
+    border-radius: 15px;
+
+}
+.btnv a {
+    color: #f7f9fa;
+    text-decoration: none;
+}
+
+.btnv a:hover {
+    color: darkgreen;        /* couleur au survol */
+}
+
+.btnv a:active {
+    color: goldenrod;        /* couleur au "clic" */
+}
+
+.btnv a:visited {
+    color: #f7f9fa;
+}

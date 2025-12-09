@@ -1,0 +1,154 @@
+/* PAGE GLOBALE */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* CONTENEUR PRINCIPAL DU PANIER */
+.cart-page {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* UN PRODUIT DU PANIER */
+.cart-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #ffffff;
+    border: 2px solid #d84343;           /* rouge contour */
+    border-radius: 15px;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+}
+
+/* IMAGE PRODUIT */
+.cart-item-image {
+    flex: 0 0 120px;
+    height: 90px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.cart-item-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* TEXTE (TITRE + DESCRIPTION) */
+.cart-item-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.cart-item-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333333;
+}
+
+.cart-item-description {
+    font-size: 12px;
+    line-height: 1.3;
+    color: #777777;
+}
+
+/* PRIX À DROITE DU CADRE PRODUIT */
+.cart-item-price {
+    align-self: flex-start;
+    background-color: #00a572;           /* vert bouton prix */
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 8px 16px;
+    border-radius: 999px;
+}
+
+/* ICONES FAVORI / SUPPRESSION */
+.cart-item-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-left: 20px;
+}
+
+.cart-item-actions button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.cart-item-actions img,
+.cart-item-actions i {
+    font-size: 22px;
+    color: #777777;
+}
+
+/* SECTION CODE PROMO + PRIX TOTAL */
+.cart-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+}
+
+/* CODE PROMO */
+.promo-code {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.promo-code label {
+    font-size: 14px;
+    color: #555555;
+}
+
+.promo-code input {
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: 1px solid #cccccc;
+    min-width: 180px;
+    font-size: 13px;
+}
+
+/* PRIX TOTAL */
+.cart-total {
+    background-color: #008b60;           /* vert foncé */
+    color: #ffffff;
+    padding: 10px 22px;
+    border-radius: 999px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+/* RESPONSIVE */
+@media (max-width: 700px) {
+
+    .cart-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cart-item-actions {
+        flex-direction: row;
+        margin-left: 0;
+    }
+
+    .cart-footer {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 15px;
+    }
+
+    .cart-total {
+        text-align: center;
+    }
+}

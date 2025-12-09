@@ -1,0 +1,132 @@
+#bloc {
+    position: relative;
+    background: #f7f9fa;
+    border: 3px solid #d62828;
+    border-radius: 15px;
+    width:40%;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 10px;
+
+}
+.titreC {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 0;
+    margin: auto;
+    margin-top: 10px;
+    gap: 4px;
+}
+.logoP{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-top: 5px;
+}
+.logoP a:first-of-type{
+    margin-left: auto;
+}
+.logoP img{
+    width: 50px;
+    height: 30px;
+    display: block;
+}
+#carte {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.infoC {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    height: auto;
+}
+.btnc1 {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    width: 120px;
+    height: 50px;
+    background: #d62828;
+    border: #d62828;
+    border-radius: 15px;
+}
+.btnc2{
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    width: 120px;
+    height: 50px;
+    background: #d62828;
+    border: #d62828;
+    border-radius: 15px;
+}
+.btnc1, .btnc2 {
+    color: #f7f9fa;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btnc1:hover, .btnc2:hover {
+    color: darkgreen;
+}
+
+.btnc1:active, .btnc2:active {
+    color: goldenrod;
+}
+
+.btnc1:visited, .btnc2:visited {
+    color: #f7f9fa;
+}
+.infoC {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 400px;
+}
+.ligne {
+    display: flex;
+    flex-direction: column;
+}
+
+.double {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+input {
+    padding: 10px;
+    border: 1px solid #f7f7fa;
+    border-radius: 6px;
+    font-size: 16px;
+    width: 100%;
+}
+label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+.boutons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.btnc1, .btnc2 {
+    padding: 12px 20px;
+    font-size: 16px;
+    border: #d62828;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: #d62828;
+    color: #f7f7fa;
+    min-width: 130px;
+    text-align: center;
+}
+
+

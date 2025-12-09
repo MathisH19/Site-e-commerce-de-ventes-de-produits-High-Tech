@@ -1,0 +1,121 @@
+/* CSS classique pour register.php, basé sur la maquette, sans flex sur <body> */
+
+:root {
+    --border: #e14e4e;      /* contour rouge */
+    --btn: #d64545;         /* bouton rouge */
+    --btn-dark: #bf3a3a;    /* hover */
+    --field-border: #e5e7eb;/* bord inputs */
+    --label: #555;
+    --bg: #f7f7f8;          /* fond clair */
+}
+
+* { box-sizing: border-box; }
+
+html, body { height: 100%; }
+
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: #222;
+}
+
+/* Titre */
+h2 {
+    max-width: 640px;
+    margin: 32px auto 12px auto;
+    padding: 0 16px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+/* Conteneur + carte avec liseré rouge arrondi */
+#formInscription {
+    max-width: 640px;
+    margin: 0 auto 40px auto; /* centrage horizontal sans flex */
+    padding: 16px;
+}
+
+#formInscription form {
+    background: #fff;
+    border: 2px solid var(--border);
+    border-radius: 8px;
+    padding: 18px 16px 70px 16px; /* place pour le bouton en bas à droite */
+    position: relative;           /* ancre le bouton */
+}
+
+/* Champs */
+#formInscription input[type="text"],
+#formInscription input[type="email"],
+#formInscription input[type="number"],
+#formInscription input[type="password"] {
+    width: 100%;
+    height: 38px;
+    border: 1px solid var(--field-border);
+    border-radius: 6px;
+    padding: 8px 10px;
+    font-size: 14px;
+    background: #fff;
+}
+
+#formInscription input::placeholder { color: #9aa0a6; }
+
+/* Espacements verticaux réguliers */
+#formInscription input + input { margin-top: 12px; }
+
+/* Ligne Nom / Prénom en 2 colonnes */
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+/* CGV : texte + case à cocher à droite */
+.cgv {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    color: var(--label);
+    font-size: 14px;
+}
+
+.cgv a { color: #c63737; text-decoration: none; }
+.cgv a:hover { text-decoration: underline; }
+
+#cgv { width: 18px; height: 18px; }
+
+/* Bouton en bas à droite, rouge arrondi (scopé au formulaire d'inscription) */
+#formInscription button[type="submit"] {
+    position: absolute;
+    right: 12px;
+    bottom: 12px;
+    height: 38px;
+    padding: 0 18px;
+    background: var(--btn);
+    color: #fff;
+    border: none;
+    border-radius: 999px;
+    font-weight: 600;
+    cursor: pointer;
+}
+#formInscription button[type="submit"]:hover { background: var(--btn-dark); }
+
+/* Messages PHP */
+p[style*="color:red"] {
+    max-width: 640px;
+    margin: 12px auto;
+    color: #b00020 !important;
+}
+p[style*="color:green"] {
+    max-width: 640px;
+    margin: 12px auto;
+    color: #137333 !important;
+}
+
+/* Responsive: Nom/Prénom empilés sur mobile */
+@media (max-width: 520px) {
+    .row { grid-template-columns: 1fr; }
+}
