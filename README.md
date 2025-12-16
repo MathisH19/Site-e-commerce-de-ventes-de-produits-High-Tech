@@ -4,7 +4,7 @@
 
 ## Getting started
 
-Ce projet à était réalisé en trio chacun avec des taches répartit, j'étais responsable du GIT et chef de projet. Ce projet à était réalisé sur gitLAB d'où le manque de suivis à propos des commits et autres.
+Ce projet à été réalisé en trio chacun avec des taches réparties, j'étais responsable du GIT et chef de projet. Ce projet à été réalisé sur gitLAB d'où le manque de suivis à propos des commits et autres.
 
 ## Add your files
 
@@ -89,4 +89,5 @@ For open source projects, say how it is licensed.
 
 ## Project status
 If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+
 
